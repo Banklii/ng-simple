@@ -1,0 +1,24 @@
+name: Build and deploy
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Build and Deploy
+        if: github.ref == 'refs/heads/master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm install --silent
+          npx ng deploy --no-silent --name="Buildbot" --email="buildbot@gmail.com" --base-href=/${GITHUB_REPOSITORY#*/}/
