@@ -1,0 +1,101 @@
+.nav {
+    border: 1px solid white;
+    /* background-color: #333; */
+    background-color: gray;
+}
+
+body .container-fluid {
+    /* background-color: yellow; */
+    /* border: blue 1px solid; */
+    padding-top: 7px;
+    height: 100%;
+    width: 100%;
+}
+
+.banner {
+    background-color: #333;
+}
+
+.banner h5,
+.banner span {
+    color: #ffbd39;
+}
+
+
+/* .banner span svg {
+    font: size 15px;
+    color: #fff;
+} */
+
+.banner h2,
+.banner p {
+    color: #fff;
+}
+
+.banner img {
+    display: block;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-right: 0; */
+}
+
+.banner .container-fluid .col-md-6 {
+    border: red 1px solid;
+}
+
+.banner .container-fluid .col-md-6 .hero-caption {
+    border: plum 1px solid;
+    width: 100%;
+    height: 100%;
+    padding-left: 70px;
+    /* padding-right: 70px; */
+    padding-top: 15rem;
+}
+
+.banner .container-fluid .col-md-6 .hero-caption-full {
+    width: 100%;
+    /* height: 100%; */
+    /* position: absolute; */
+    border: blue 1px solid;
+    padding-left: 95px;
+}
+
+.banner .container-fluid .col-md-6 .heor-img {
+    /* border: tomato 1px solid; */
+}
+
+.banner .container-fluid .col-md-6 .heor-img img {
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+}
+
+
+/*********************************content1***************************************/
+
+.content1 {
+    background-color: #312f2f;
+    border: red 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+.content1 .about-info {
+    border: #fff 1px solid;
+    width: 100%;
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.content1 h5,
+.content1 span {
+    color: #ffbd39;
+}
+
+.content1 h2,
+.content1 p {
+    color: #fff;
+}
