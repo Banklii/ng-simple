@@ -61,9 +61,6 @@ section .banner {
     height: 700px;
 }
 
-
-/*********************************content1***************************************/
-
 section .content1 {
     background-color: #333533;
     /* border: red 1px solid; */
@@ -111,9 +108,6 @@ section .content1 {
 .content1 .about-info li a {
     color: #fff;
 }
-
-
-/****************************content2**********************************/
 
 section .ps-timeline-sec {
     position: relative;
@@ -392,6 +386,3 @@ section .ps-timeline-sec .ps-top p {
     position: absolute;
     margin-top: 35px;
 }
-
-
-/***************************content3*******************************/
