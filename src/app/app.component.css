@@ -1,3 +1,9 @@
+@media only screen and (max-width:767px) {
+    .navbar {
+        display: none;
+    }
+}
+
 .navbar {
     overflow: hidden;
     background-color: #202020;
@@ -7,17 +13,56 @@
     z-index: 999;
 }
 
+.navbar .navbar-nav {
+    margin: 0 0 0 45rem;
+}
+
 .container-fluid .navbar-collapse .nav-item a {
     color: #fff;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
 /*******************************banner************************************/
 
-section .banner {
+@media only screen and (max-width:767px) {
+    .banner .container-fluid .row {
+        flex-direction: column;
+    }
+    .banner .container-fluid .col-md-6 .hero-caption {
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+    }
+    .banner h5,
+    .banner span {
+        color: #ffbd39;
+    }
+    .banner h2,
+    .banner p {
+        color: #fff;
+    }
+    .banner .container-fluid .col-md-6 .hero-caption-full {
+        width: 100%;
+        padding: 50px;
+        top: 0;
+    }
+    .banner .container-fluid .col-md-6 .heor-img img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        width: 500px;
+        height: 580px;
+    }
+}
+
+section .banner .container-fluid {
     background-color: #202020;
-    /* border: red 1px solid; */
-    height: 100vh;
+    height: 100%;
+    width: auto;
 }
 
 .banner h5,
@@ -32,70 +77,68 @@ section .banner {
 
 .banner img {
     display: block;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* margin-right: 0; */
 }
 
 .banner .container-fluid .col-md-6 {
-    /* border: yellow 1px solid; */
-    height: 100vh;
+    padding-top: 5.5rem;
 }
 
 .banner .container-fluid .col-md-6 .hero-caption {
-    /* border: plum 1px solid; */
     width: 100%;
     height: 100%;
-    padding-left: 70px;
-    /* padding-right: 70px; */
-    padding-top: 15rem;
+    padding-left: 0px;
+    padding-top: 10rem;
 }
 
 .banner .container-fluid .col-md-6 .hero-caption-full {
     width: 100%;
-    /* height: 100%; */
-    /* position: absolute; */
-    /* border: blue 1px solid; */
     padding-left: 95px;
 }
 
-
-/* .banner .container-fluid .col-md-6 .heor-img {
-    border: tomato 1px solid;
-} */
+.banner .container-fluid .col-md-6 .hero-caption-full a {
+    background-color: #7b68ee;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
 
 .banner .container-fluid .col-md-6 .heor-img img {
-    /* height: 100%;
-    width: 100%;
-    margin-right: 0; */
-    /* border: green 1px solid; */
-    display: block;
-    position: absolute;
-    right: 0;
+    right: 5%;
+    /* top: 40px; */
     bottom: 0;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 580px;
 }
 
 
 /*********************************content1***************************************/
 
-section .content1 {
+@media only screen and (max-width:767px) {
+    section .content1 {
+        background-color: #333533;
+        height: 100%;
+    }
+    section .content1 .container-fluid .row {
+        flex-direction: column;
+    }
+}
+
+section .content1 .container-fluid {
     background-color: #333533;
-    /* border: red 1px solid; */
-    height: 100vh;
+    height: 100%;
+    width: auto;
 }
 
 .content1 {
-    /* background-color: #312f2f; */
-    /* background-color: #403D3C; */
-    /* border: red 1px solid; */
     width: 100%;
     height: auto;
 }
 
 .content1 .about-info {
-    /* border: #fff 1px solid; */
     width: 100%;
     height: 100%;
     padding-left: 70px;
@@ -136,26 +179,37 @@ section .content1 {
 
 /****************************content2**********************************/
 
+@media only screen and (max-width:767px) {
+    section .content2 .ps-timeline-sec {
+        background: #202020;
+        height: 100%;
+        width: auto;
+        border: #202020 1px solid;
+    }
+    section .content2 .container-fluid .row {
+        flex-direction: column;
+    }
+    section .ps-timeline-sec {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+}
+
 section .content2 .ps-timeline-sec {
     background: #202020;
-    height: 100vh;
+    height: 100%;
+    width: auto;
     border: #202020 1px solid;
 }
 
-
-/* .ps-timeline-sec .container {
-    position: relative;
-} */
-
 section .ps-timeline-sec {
     padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 section .ps-timeline-sec h2 {
     text-align: center;
     color: #fff;
-    /* border: red 1px solid; */
-    /* padding-top: 50px; */
 }
 
 section .ps-timeline-sec h3 {
@@ -192,20 +246,27 @@ section .ps-timeline-sec p {
 
 /***************************content3*******************************/
 
-section .content3 {
+@media only screen and (max-width:767px) {
+    section .content3 {
+        background-color: #333533;
+        height: 100%;
+        width: auto;
+    }
+    section .content3 .container-fluid .row {
+        flex-direction: column;
+    }
+}
+
+section .content3 .container-fluid {
     background-color: #333533;
-    height: 100vh;
+    height: 100%;
+    width: auto;
 }
 
 section .content3 .skill h2 {
     color: #fff;
     text-align: center;
 }
-
-
-/* * {
-    box-sizing: border-box
-} */
 
 section .content3 .skill .container {
     width: auto;
@@ -215,41 +276,30 @@ section .content3 .skill .container {
 }
 
 section .content3 .container-fluid .row .col-md-6 {
-    /* border: #ddd 1px solid; */
     height: 100vh;
 }
 
 section .content3 .container-fluid .row .col-md-6 .skill {
-    /* border: red 1px solid; */
     height: auto;
     padding-top: 80px;
     width: 75%;
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
-}
-
-section .content3 .skill {
-    /* border: #0099FF 1px solid; */
 }
 
 section .content3 .skill p {
     text-align: left;
     color: #fff;
-    /* border: yellow 1px solid; */
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 3px;
 }
 
 .skills {
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     color: white;
 }
-
-
-/* .content3 .skill .container  */
 
 .html,
 .css,
@@ -359,9 +409,33 @@ section .content3 .skill p {
 
 /**************************content4***********************/
 
-section .content4 {
+@media only screen and (max-width:767px) {
+    section .content4 {
+        background-color: #202020;
+        height: 100%;
+        width: auto;
+    }
+    section .content4 .container-fluid .row {
+        flex-direction: column;
+    }
+    .container-fluid .col-md-12 h2 {
+        color: #fff;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .content4 .container-fluid slide img {
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+}
+
+section .content4 .container-fluid {
     background-color: #202020;
-    height: 100vh;
+    height: 100%;
+    width: auto;
 }
 
 .container-fluid .col-md-12 h2 {
@@ -375,10 +449,10 @@ section .content4 {
 }
 
 .content4 .container-fluid slide img {
-    /* border: #CC0033 1px solid; */
     height: 500px;
     width: auto;
     margin-top: 10px;
+    margin-bottom: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -387,9 +461,25 @@ section .content4 {
 
 /**************************content5***********************/
 
+@media only screen and (max-width:767px) {
+    section .content5 {
+        background-color: #333533;
+        height: 100%;
+        width: auto;
+    }
+    section .content5 .container-fluid .row {
+        flex-direction: column;
+    }
+    .content5 .resume-item-box {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
 section .content5 {
     background-color: #333533;
-    height: 100vh;
+    height: 100%;
+    width: auto;
 }
 
 section .content5 h2 {
@@ -397,22 +487,6 @@ section .content5 h2 {
     color: #fff;
     padding-top: 70px;
 }
-
-
-/* .container-fluid .col-md-12 h2 {
-    color: #fff;
-    text-align: center;
-    padding-top: 60px;
-}
-
-.content5 .container-fluid slide img {
-    height: 500px;
-    width: auto;
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 .content5 .resume-item-box span {
     background: #ffbd39;
@@ -425,6 +499,7 @@ section .content5 h2 {
 }
 
 .content5 .resume-item-box {
+    margin-bottom: 40px;
     margin-top: 20px;
     padding: 15px 10px;
     text-align: left;
@@ -445,9 +520,37 @@ section .content5 h2 {
 
 /**************************content6***********************/
 
+@media only screen and (max-width:767px) {
+    section .content6 {
+        background-color: #202020;
+        height: 100%;
+        width: auto;
+    }
+    section .content6 .container-fluid .row {
+        flex-direction: column;
+    }
+    .map-container-2 {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    .map-container-2 iframe {
+        left: 0;
+        top: 0;
+        height: 10rem;
+        width: 10rem;
+        position: absolute;
+    }
+    section .content6 .container .row .col-lg-12 {
+        margin-bottom: 40px;
+    }
+}
+
 section .content6 {
     background-color: #202020;
-    height: 100vh;
+    height: 100%;
+    width: auto;
 }
 
 section .content6 h2 {
@@ -467,9 +570,12 @@ section .content6 h4 {
 
 section .content6 .container .row .col-lg-6,
 section .content6 .container .row .col-lg-12 {
-    /* border: #CC0033 1px solid; */
     padding: 2.5px;
     margin-top: 7px;
+}
+
+section .content6 .container .row .col-lg-12 {
+    margin-bottom: 40px;
 }
 
 .map-container-2 {
